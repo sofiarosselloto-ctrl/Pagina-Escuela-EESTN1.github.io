@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .barra_nav{
+            position: relative;
+            top: 0;
+            display: flex;
+        }
+    
+    form {
+        background: #19274e;
+        padding: 25px 35px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgb(0, 0, 0,0.1);
+        width: 320px;
+        margin: 50px 0px 0px 460px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #f7f7f7;
+    }
+    label {
+        display: block;
+        margin-top: 10px;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+        width: 100%;
+        padding: 8px 10px;
+        margin-top: 5px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        transition: border-color 0.3s;
+    }
+    input:focus{
+        border-color: #007bff;
+        outline: none;
+    }
+    .campo-pass{
+        position: relative;
+    }
+    .campo-pass button{
+        position: absolute;
+        right: 8px;
+        top: 7px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color:#007bff;
+    }
+    .checkbox-group,
+    .radio-group{
+        margin-top: 10px;
+    }
+    .checkbox-group label,
+    .radio-group label{
+        font-weight: normal;
+        color: #ffffff;
+        display:flex;
+        align-items: center;
+        gap: 5px;
+    }
+    input[type="submit"]{
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background: #0f132e;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    input[type="submit"]:hover{
+        background: #090b1b;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+  
+</header>
+<nav class="barra_nav">
+        <a href="index.html">Inicio</a>
+        <h1>Inscripcion</h1>
+        <a href="#otra">Informacion</a>
+    </nav>  
+
+   <form>
+    <h2>Registro de Usuario</h2>
+
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+    <label for="correo">Correo electronico</label>
+    <input type="email" id="correo" placeholder="tuemail@ejemplo.com" required>
+
+    <label for="clave">Contraseña</label>
+    <div class="campo-pass">
+        <input type="password" id="clave" placeholder="********" required>
+        <button type="button" onclick="mostrarOcultar()">👁️</button>
+    </div>
+
+    <div class="checkbox-group">
+        <label>
+            <input type="checkbox"id="terminos"checked>
+            Acepto los terminos y condiciones
+        </label>
+    </div>
+
+    <div class="radio-group">
+        <p>Sexo:</p>
+        <label>
+            <input type="radio" name="sexo" value="femenino"checked>Femenino
+        </label>
+        <label>
+            <input type="radio" name="sexo" value="masculino">Masculino
+        </label> 
+        <label>
+            <input type="radio" name="sexo" value="otro">Otro
+        </label>
+    </div>
+
+    <input type="submit" value="Registrarme">
+   </form>
+
+   <script>
+    function mostrarOcultar(){
+        const input = document.getElementByld("clave");
+        const boton = document.querySelector(".campo-pass button");
+        if (input.type === "password"){
+            input.type = "text";
+            boton.textContent = "🙈";
+        }else{
+            input.type = "password";
+            boton.textContent = "👁️";
+        }
+    }
+   </script>
+
+</html>

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Serif", serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f132e;
+    font-family: "Noto Serif", serif;
+    color: #ffffff;
+    margin: 0px 10px 0px 10px;
+}
+
+.barra_nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #19274e;
+}
+
+.barra_nav a {
+    background-color: #19274e;
+    color: #536d88;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 5px;
+
+}
+
+a:hover {
+    background-color: #0f132e;
+    color: #536d88;
+}
+
+
+.articulo {
+    font-size: 1rem;
+    color: rgba(250, 250, 250, 0.993);
+    background-color: #19274e;
+}
+
+.tarjeta {
+    display: block;
+    width: 200px;
+    border-radius: 10px;
+    margin: 30px 0px 0px 30px;
+    text-decoration: none;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.tarjeta .contenido p {
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #0f132e;
+}
+
+.tarjeta:hover {
+    box-shadow: 4px 3px 2px #19274e;
+    transform: translateY(-7px);
+
+}
+
+.contenedor .texto {
+    background-color: #0f132e;
+    border: 1px solid #070914;
+    border-radius: 5px;
+    height: 200px;
+    word-wrap: break-word;
+    width: 150px;
+    margin: 30px 30px 0px 0px;
+    padding: 10px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 200px 30px 200px;
+    gap: 40px;
+    background-color: #19274e;
+    color: #ffffff;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+.imag .Expl {
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #0f132e;
+}
+
+.imag {
+    width: 20%;
+    height: auto;
+    display: block;
+    justify-content: right;
+    margin: 30px 40px 0px 0px;
+}
+
+.imag img {
+    border-radius: 10px;
+}
+
+.caja {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 0px 0px 0px 30px;
+    border-radius: 10px;
+}
+
+.cuadrado {
+    padding: 30px;
+    display:flex; 
+    justify-content: center;
+    background-color: #0f132e;
+    font-family: "Noto Serif", serif;
+    }
+form{
+    margin: 20px;
+}
+.Agrandar{
+    width: 200px;
+}
+
+
+.enviar {
+    width: 100%;
+    color: #070914;
+    background-color: rgb(255, 255, 255);
+
+}
